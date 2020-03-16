@@ -5,6 +5,7 @@ This chalice API supports the creation and storage of Polygons using postgis.
 
 ## Setup
 1. Install Dependencies
+
     All requirements are listed in the Pipfile. Create a new virtual environment with these dependencies by running `$ pipenv install`.
 
 2. Environment Setup
@@ -23,6 +24,7 @@ This chalice API supports the creation and storage of Polygons using postgis.
     Note that this file is git ignored.
 
 3. Install/Connect Database
+
     The next step is to run a database supporting the PostGIS extention. I found MDillion's docker image did the trick - it can be pulled by running 
     `$ docker pull mdillon/postgis`.
 
@@ -32,10 +34,13 @@ This chalice API supports the creation and storage of Polygons using postgis.
     You can also run Postgres outside of a container if you prefer. [Consult the PostGIS setup documentation to do this](https://postgis.net/install/).
 
 4. Database setup and seed script
+
     To check that your Postgres container is running and to setup, schematize, and seed your database, run the `database_setup.py` script within the pipenv environment. 
     `$ pipenv run python database_setup.py`
 
-5. You should now be able to run `$ pipenv run chalice local` and see the app start serving locally.
+5. Start Something
+
+    You should now be able to cd into the chalice project folder (second postSomeGis folder) and run `$ pipenv run chalice local` and see the app start serving locally.
 
 ## Endpoint Documentation
 For now, there is only a single endpoint to create and list polygons (representing cities... theoretically).
