@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 
 
 def clean_setup():
+
     # Connect to the admin db and create the database for our app
     INITIAL_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/'.format(
         user=settings.DATABASE['USER'],

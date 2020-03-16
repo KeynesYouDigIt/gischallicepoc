@@ -15,3 +15,7 @@ geojson = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+setup = "python database_setup.py"
+start = "chalice local"

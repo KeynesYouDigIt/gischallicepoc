@@ -1,0 +1,19 @@
+version: '2.0'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    command: /wait-for-it.sh db:5432 -- chalice local
+    volumes:
+      - ./wait-for-it.sh:/wait-for-it.sh
+  db:
+    image: kartoza/postgis:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+volumes:
+  postgres_data:
