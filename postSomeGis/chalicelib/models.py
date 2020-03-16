@@ -10,7 +10,7 @@ def get_all_cities():
 
 def validate_and_create_new_city(data):
     validation_result = _validate_new_city(data)
-    if not validation_result['result'] == 'failure':
+    if validation_result['result'] == 'failure':
         return validation_result
     return _create_new_city(data)
 
