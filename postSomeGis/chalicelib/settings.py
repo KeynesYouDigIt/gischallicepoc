@@ -1,6 +1,6 @@
-# chalicelib/settings.py
 import os
 
+# read vital database vars from .env
 DATABASE = {
     'HOST': os.environ['DB_HOST'],
     'PORT': os.environ['DB_PORT'],

@@ -1,0 +1,2 @@
+CREATE DATABASE postgis_db
+CREATE DATABASE post_gis WITH PASSWORD'45asf54';        ^

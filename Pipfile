@@ -11,6 +11,7 @@ sqlalchemy = "*"
 psycopg2-binary = "*"
 geoalchemy2 = "*"
 ipdb = "*"
+geojson = "*"
 
 [requires]
 python_version = "3.7"

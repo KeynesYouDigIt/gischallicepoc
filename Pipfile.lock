@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "679f3681b287887e1512e111f7a9d274ef5c4c9a996b5a4e0cc4921302070826"
+            "sha256": "9ab712dfcea5d7290fc3a3ff41cd177e23c81d0e8b7ee2522e0b9d295451fead"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,10 +32,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:4aabdfb65e1f3eb6d35fe5d921a9b6fd2880ea0ec39ad874af762192b6c40825",
-                "sha256:babe0e84fc8ba1d8b349acf2cd98d5b15d8974912d393ad149ff2b385097a062"
+                "sha256:4aaf6c94bcaace260138d32eae144be1b5d2ddce9ef0f395da32c68e106ff20f",
+                "sha256:86f7f1c489887f9e3c2ede598e2a30f8bd259c11e8ebe25e897e40231b3f4bc8"
             ],
-            "version": "==1.15.20"
+            "version": "==1.15.21"
         },
         "chalice": {
             "hashes": [
@@ -81,6 +81,14 @@
             ],
             "index": "pypi",
             "version": "==0.6.3"
+        },
+        "geojson": {
+            "hashes": [
+                "sha256:6e4bb7ace4226a45d9c8c8b1348b3fc43540658359f93c3f7e03efa9f15f658a",
+                "sha256:ccbd13368dd728f4e4f13ffe6aaf725b6e802c692ba0dde628be475040c534ba"
+            ],
+            "index": "pypi",
+            "version": "==2.5.0"
         },
         "ipdb": {
             "hashes": [
