@@ -38,7 +38,7 @@ This chalice API supports the creation and storage of Polygons using postgis.
     To check that your Postgres container is running and to setup, schematize, and seed your database, run the `database_setup.py` script within the pipenv environment. 
     `$ pipenv run python database_setup.py`
 
-5. Start Something
+5. Start The Server
 
     You should now be able to cd into the chalice project folder (second postSomeGis folder) and run `$ pipenv run chalice local` and see the app start serving locally.
 
